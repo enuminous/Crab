@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CRAB Contradiction Record",
+  "type": "object",
+  "required": [
+    "machine_version",
+    "timestamp",
+    "system_id",
+    "contradiction_score"
+  ],
+  "properties": {
+    "machine_version": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "system_id": {
+      "type": "string"
+    },
+    "contradiction_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "contradiction_mean": {
+      "type": "number"
+    },
+    "contradiction_max": {
+      "type": "number"
+    },
+    "consensus_instability": {
+      "type": "number"
+    }
+  }
+}
